@@ -6,6 +6,19 @@
         **************************************************
 
 
+                CHANGES IN R VERSION 1.0.3
+
+
+BUG FIXES
+
+    o   Updated DESCRIPTION file with minor corrections and updated email.
+    
+    o   Added imports to the NAMESPACE file as suggested by R CMD check.
+   
+    o   Modified rem() method to handle || change coming in upcoming R version
+        that was causing an error.
+
+
                 CHANGES IN R VERSION 1.0.2
 
 
