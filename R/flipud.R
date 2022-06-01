@@ -1,5 +1,5 @@
 ###
-### $Id: flipud.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: flipud.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Flip matrices up-down.
 ###
@@ -16,7 +16,7 @@ setMethod("flipud",
           signature(object = "vector"),
           function(object) {
               #cat(match.call()[[1]], "(vector)", "\n")
-              return(rev(object))
+              rev(object)
           })
 
 setMethod("flipud",
@@ -24,7 +24,7 @@ setMethod("flipud",
           function(object) {
               #cat(match.call()[[1]], "(matrix)", "\n")
               m <- matlab::size(object)[1]
-              return(object[m:1,])
+              object[m:1, ]
           })
 
 setMethod("flipud",

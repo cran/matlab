@@ -1,5 +1,5 @@
 ###
-### $Id: fileparts.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: fileparts.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Return filename parts.
 ###
@@ -83,9 +83,9 @@ fileparts <- function(pathname) {
                name <- sub(tildeUser, "~", name))
     }
 
-    return(list(pathstr = pathstr,
-                name    = name,
-                ext     = ifelse(!is.na(ext), ext, ""),
-                versn   = ""))
+    list(pathstr = pathstr,
+         name    = name,
+         ext     = ifelse(!is.na(ext), ext, ""),
+         versn   = "")
 }
 

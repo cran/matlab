@@ -1,5 +1,5 @@
 ###
-### $Id: meshgrid.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: meshgrid.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Generate X and Y matrices for three-dimensional plots.
 ###
@@ -25,8 +25,8 @@ meshgrid <- function(x, y, z, nargout = 2) {
             yy <- yy[, matlab::ones(1, nx)]
         }
 
-        return(list(x = xx,
-                    y = yy))
+        list(x = xx,
+             y = yy)
     }
 
     meshgrid.3d <- function(x, y, z) {
@@ -53,9 +53,9 @@ meshgrid <- function(x, y, z, nargout = 2) {
             zz <- zz[matlab::ones(ny, 1), matlab::ones(nx, 1), ]
         }
 
-        return(list(x = xx,
-                    y = yy,
-                    z = zz))
+        list(x = xx,
+             y = yy,
+             z = zz)
     }
 
     if (!is.numeric(nargout)) {
@@ -64,10 +64,10 @@ meshgrid <- function(x, y, z, nargout = 2) {
         stop(sprintf("argument %s must be of length 1", sQuote("nargout")))
     }
 
-    return(switch(EXPR = as.character(nargout),
-                  "2" = meshgrid.2d(x, y),
-                  "3" = meshgrid.3d(x, y, z),
-                  stop(sprintf("argument %s must be either 2 or 3",
-                               sQuote("nargout")))))
+    switch(EXPR = as.character(nargout),
+           "2" = meshgrid.2d(x, y),
+           "3" = meshgrid.3d(x, y, z),
+           stop(sprintf("argument %s must be either 2 or 3",
+                        sQuote("nargout"))))
 }
 

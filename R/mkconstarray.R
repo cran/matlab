@@ -1,5 +1,5 @@
 ###
-### $Id: mkconstarray.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: mkconstarray.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Create a constant array of specified class.
 ###
@@ -14,6 +14,6 @@ mkconstarray <- function(class.type = c("character",
                                         "numeric"),
                          value,
                          size) {
-     return(matlab::repmat(as(value, match.arg(class.type)), size))
+     matlab::repmat(as(value, match.arg(class.type)), size)
 }
 

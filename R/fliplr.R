@@ -1,5 +1,5 @@
 ###
-### $Id: fliplr.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: fliplr.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Flip matrices left-right.
 ###
@@ -16,7 +16,7 @@ setMethod("fliplr",
           signature(object = "vector"),
           function(object) {
               #cat(match.call()[[1]], "(vector)", "\n")
-              return(rev(object))
+              rev(object)
            })
 
 setMethod("fliplr",
@@ -24,7 +24,7 @@ setMethod("fliplr",
           function(object) {
               #cat(match.call()[[1]], "(matrix)", "\n")
               n <- matlab::size(object)[2]
-              return(object[,n:1])
+              object[, n:1]
            })
 
 setMethod("fliplr",

@@ -1,5 +1,5 @@
 ###
-### $Id: vander.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: vander.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Returns the Vandermonde matrix.
 ###
@@ -19,6 +19,6 @@ vander <- function(v) {
          } else {
              outer(v, seq(n-1, 0), "^")
          }
-    return(A)
+    A
 }
 

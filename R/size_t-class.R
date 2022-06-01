@@ -1,5 +1,5 @@
 ###
-### $Id: size_t-class.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: size_t-class.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Size class.
 ###
@@ -19,12 +19,12 @@ size_t <- function(x) {
 
 ##-----------------------------------------------------------------------------
 is.size_t <- function(object) {
-    return(data.class(object) == "size_t")
+    data.class(object) == "size_t"
 }
 
 
 ##-----------------------------------------------------------------------------
 as.size_t <- function(object) {
-    return(size_t(object))
+    size_t(object)
 }
 

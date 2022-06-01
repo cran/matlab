@@ -1,4 +1,4 @@
-% $Id: matlab-package.Rd 59 2014-06-19 19:28:40Z plroebuck $
+% $Id: matlab-package.Rd 23 2022-05-30 18:22:23Z proebuck $
 
 \name{matlab-package}
 \alias{matlab-package}
@@ -28,7 +28,7 @@
   as sometimes it just wasn't possible.
 }
 \author{
-  P. Roebuck \email{proebuck@mdanderson.org}
+  P. Roebuck \email{proebuck1701@gmail.com}
 }
 \keyword{package}
 

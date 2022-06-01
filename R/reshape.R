@@ -1,5 +1,5 @@
 ###
-### $Id: reshape.R 55 2014-02-06 16:41:28Z plroebuck $
+### $Id: reshape.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Reshape matrix or array.
 ###
@@ -26,6 +26,6 @@ reshape <- function(A, ...) {
         stop("number of elements must not change")
     }
 
-    return(array(as.vector(A), dims))
+    array(as.vector(A), dims)
 }
 

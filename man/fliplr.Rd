@@ -1,4 +1,4 @@
-% $Id: fliplr.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: fliplr.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{fliplr}
 \alias{fliplr}
@@ -30,6 +30,9 @@ flipud(object)
 \value{
   Return value is the same type as argument \code{object}.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \seealso{ 
   \code{\link{rot90}}
 }   
@@ -38,9 +41,6 @@ fliplr(1:9)
 flipud(1:9)	# same as previous since vectors have no orientation in R
 fliplr(matrix(1:9, 3, 3, byrow=TRUE))
 flipud(matrix(1:9, 3, 3, byrow=TRUE))
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{array}
 

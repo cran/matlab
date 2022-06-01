@@ -1,4 +1,4 @@
-% $Id: strcmp.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: strcmp.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{strcmp}
 \alias{strcmp}
@@ -23,12 +23,12 @@ strcmp(S, T)
 \note{
   Value returned is the opposite of the C language convention.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \examples{
 strcmp("foo", "bar")  # FALSE
 strcmp(c("yes", "no"), c("yes", "no"))	# TRUE
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{character}
 

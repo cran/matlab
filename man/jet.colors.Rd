@@ -1,4 +1,4 @@
-% $Id: jet.colors.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: jet.colors.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{jet.colors}
 \alias{jet.colors}
@@ -18,6 +18,9 @@ jet.colors(n)
   a user-defined color palette for subsequent graphics, a \code{col=}
   specification in graphics functions, or in \code{par}.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \seealso{
   \code{\link[grDevices]{palette}},
   \code{\link[graphics]{par}},
@@ -27,9 +30,6 @@ jet.colors(n)
 require(graphics)
 x <- 1:16
 pie(x, col=jet.colors(length(x)))
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{color}
 

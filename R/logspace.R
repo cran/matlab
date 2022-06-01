@@ -1,5 +1,5 @@
 ###
-### $Id: logspace.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: logspace.R 22 2022-05-30 18:03:47Z proebuck $
 ###
 ### Generate logarithmically spaced vectors.
 ###

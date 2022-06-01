@@ -1,5 +1,5 @@
 ###
-### $Id: nextpow2.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: nextpow2.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Next higher power of 2.
 ###
@@ -17,6 +17,6 @@ nextpow2 <- function(x) {
     }
 
     x[x == 0] <- 1
-    return(ceiling(log2(abs(x))))
+    ceiling(log2(abs(x)))
 }
 

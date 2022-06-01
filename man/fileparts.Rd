@@ -1,4 +1,4 @@
-% $Id: fileparts.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: fileparts.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{fileparts}
 \alias{fileparts}
@@ -32,6 +32,9 @@ fileparts(pathname)
   containing the actual name.
   For best results, use this routine to process files, not directories.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \seealso{
   \code{\link{fullfile}}
 }
@@ -39,9 +42,6 @@ fileparts(pathname)
 ## Rename dot-txt file as dot-csv
 ans <- fileparts("/home/luser/foo.txt")
 fullfile(ans$pathstr, paste(ans$name, "csv", sep="."))   # /home/luser/foo.csv
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{file}
 

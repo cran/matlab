@@ -1,4 +1,4 @@
-% $Id: linspace.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: linspace.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{linspace}
 \alias{linspace}
@@ -24,14 +24,14 @@ linspace(a, b, n=100)
   between \code{a} and \code{b} inclusive. If \eqn{\code{n} < 2}, the
   result will be the ending point \code{b}.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \seealso{
   \code{\link{logspace}}
 }
 \examples{
 linspace(1, 10, 4)
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{manip}
 

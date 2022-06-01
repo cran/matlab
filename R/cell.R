@@ -1,5 +1,5 @@
 ###
-### $Id: cell.R 55 2014-02-06 16:41:28Z plroebuck $
+### $Id: cell.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Create cell array.
 ###
@@ -35,6 +35,6 @@ cell <- function(...) {
         return(L)
     }
 
-    return(createCellArray(dims))
+    createCellArray(dims)
 }
 

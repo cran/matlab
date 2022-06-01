@@ -1,4 +1,4 @@
-% $Id: size.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: size.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{size}
 \alias{size}
@@ -38,14 +38,14 @@ size(X, dimen)
   Handling of vectors is different than in initial implementation.
   Initial implementation returned \code{\link[base]{length}}.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \examples{
 size(2:9)			# 1 8
 size(matrix(1:8, 2, 4))		# 2 4
 size(matrix(1:8, 2, 4), 2)	# 4
 size(matrix(1:8, 2, 4), 3)	# 1
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{array}
 

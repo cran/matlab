@@ -1,4 +1,4 @@
-% $Id: fix.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: fix.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{fix}
 \alias{fix}
@@ -19,15 +19,15 @@ fix(A)
   Returns vector containing integers by truncating the
   corresponding values of argument \code{A} toward zero.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \seealso{ 
   \code{\link{ceil}},
   \code{\link[base]{Round}}
 }   
 \examples{
 fix(c(1.3, 2.5, 3.7))
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{arith}
 

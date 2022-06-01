@@ -1,5 +1,5 @@
 ###
-### $Id: strcmp.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: strcmp.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Compare strings.
 ###
@@ -14,10 +14,10 @@ strcmp <- function(S, T) {
         stop(sprintf("argument %s must be character", sQuote("T")))
     }
 
-    return(if (length(S) == length(T)) {
-               all(S == T)
-           } else {
-               FALSE
-           })
+    if (length(S) == length(T)) {
+        all(S == T)
+    } else {
+        FALSE
+    }
 }
 

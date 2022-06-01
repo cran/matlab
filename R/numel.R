@@ -1,5 +1,5 @@
 ###
-### $Id: numel.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: numel.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Provides number of elements.
 ###
@@ -11,6 +11,6 @@ numel <- function(A, varargin) {
         stop("not implemented")         # need example
     }
 
-    return(prod(matlab::size(A)))
+    prod(matlab::size(A))
 }
 

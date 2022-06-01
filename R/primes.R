@@ -1,5 +1,5 @@
 ###
-### $Id: primes.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: primes.R 22 2022-05-30 18:03:47Z proebuck $
 ###
 ### Generate list of prime numbers.
 ###

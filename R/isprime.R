@@ -1,5 +1,5 @@
 ###
-### $Id: isprime.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: isprime.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Array elements that are prime numbers.
 ###
@@ -23,6 +23,6 @@ isprime <- function(x) {
                      sQuote("x")))
     }
 
-    return(as.integer(x %in% matlab::primes(max(x))))
+    as.integer(x %in% matlab::primes(max(x)))
 }
 

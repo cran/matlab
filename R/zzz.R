@@ -1,5 +1,5 @@
 ###
-### $Id: zzz.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: zzz.R 28 2022-05-30 20:51:07Z proebuck $
 ###
 ### Hooks called as package is loaded, attached, detatched, and unloaded.
 ###
@@ -49,10 +49,8 @@
     ## Load internal variables
     assign("savedTime", 0, envir=.MatlabNamespaceEnv)
 
-    ## Allow no changes or additions to environment
-    lockEnvironment(.MatlabNamespaceEnv, bindings=TRUE)
-
-    ## Only allow internal vars to change
-    unlockBinding("savedTime", .MatlabNamespaceEnv)
+    ## Allow no changes or additions to environment,
+    ## but allow its internal vars to change
+    lockEnvironment(.MatlabNamespaceEnv)
 }
 

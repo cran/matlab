@@ -1,5 +1,5 @@
 ###
-### $Id: ceil.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: ceil.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Rounds to the nearest integer.
 ###
@@ -7,6 +7,6 @@
 
 ##-----------------------------------------------------------------------------
 ceil <- function(x) {
-    return(ceiling(x))
+    ceiling(x)
 }
 

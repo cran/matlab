@@ -1,5 +1,5 @@
 ###
-### $Id: isempty.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: isempty.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Determine if object is empty.
 ###
@@ -7,6 +7,6 @@
 
 ##-----------------------------------------------------------------------------
 isempty <- function(A) {
-     return(any(matlab::size(A) == 0))
+    any(matlab::size(A) == 0)
 }
 

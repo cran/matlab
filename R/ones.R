@@ -1,5 +1,5 @@
 ###
-### $Id: ones.R 55 2014-02-06 16:41:28Z plroebuck $
+### $Id: ones.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Create a matrix of all ones.
 ###
@@ -24,6 +24,6 @@ ones <- function(...) {
         stop("dimensions must be a positive quantity")
     }
 
-    return(array(1, dims))
+    array(1, dims)
 }
 

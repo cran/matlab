@@ -1,4 +1,4 @@
-% $Id: fullfile.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: fullfile.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{fullfile}
 \alias{fullfile}
@@ -27,15 +27,15 @@ fullfile(\dots)
   separated by file separator if all arguments have a positive length;
   otherwise, an empty character vector.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \seealso{
   \code{\link{fileparts}},
   \code{\link{filesep}}
 }
 \examples{
 fullfile("", "etc", "profile")	# /etc/profile
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{file}
 

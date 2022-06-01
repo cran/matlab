@@ -1,4 +1,4 @@
-% $Id: cell.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: cell.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{cell}
 \alias{cell}
@@ -16,6 +16,9 @@ cell(\dots)
   Returns list consisting of empty matrices.
   Defaults to square if dimension argument resolves to a single value.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \seealso{ 
   \code{\link{ones}},
   \code{\link{zeros}}
@@ -25,9 +28,6 @@ cell(3)
 cell(c(3, 3))			# same thing
 cell(3, 3)			# same thing
 cell(size(matrix(NA, 3, 3)))	# same thing
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{array}
 \keyword{list}

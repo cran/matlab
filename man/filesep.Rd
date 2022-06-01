@@ -1,4 +1,4 @@
-% $Id: filesep.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: filesep.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{filesep}
 \alias{filesep}
@@ -19,13 +19,13 @@ filesep
   Implemented as an R variable rather than a function such that it more
   closely resembles normal MATLAB usage. 
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \seealso{
   \code{\link{fileparts}},
   \code{\link{fullfile}},
   \code{\link{pathsep}}
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{file}
 

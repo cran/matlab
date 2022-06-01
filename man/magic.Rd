@@ -1,4 +1,4 @@
-% $Id: magic.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: magic.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{magic}
 \alias{magic}
@@ -25,15 +25,15 @@ magic(n)
 \note{
   A magic square, scaled by its magic sum, is doubly stochastic.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \seealso{ 
   \code{\link{ones}},
   \code{\link{zeros}}
 }   
 \examples{
 magic(3)
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{array}
 

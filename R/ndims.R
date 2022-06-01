@@ -1,5 +1,5 @@
 ###
-### $Id: ndims.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: ndims.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Provides the number of dimensions.
 ###
@@ -7,6 +7,6 @@
 
 ##-----------------------------------------------------------------------------
 ndims <- function(A) {
-    return(length(matlab::size(A)))
+    length(matlab::size(A))
 }
 

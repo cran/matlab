@@ -1,5 +1,5 @@
 ###
-### $Id: pow2.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: pow2.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Raise 2 to some power.
 ###
@@ -34,6 +34,6 @@ pow2 <- function(f, e) {
                      sQuote("e")))
     }
 
-    return(f * 2^e)
+    f * 2^e
 }
 

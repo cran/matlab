@@ -1,5 +1,5 @@
 ###
-### $Id: factors.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: factors.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Factorize natural number.
 ###
@@ -41,6 +41,6 @@ factors <- function(n) {
         f <- c(f, n)
     }
 
-    return(f)
+    f
 }
 

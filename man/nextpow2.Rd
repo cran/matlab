@@ -1,4 +1,4 @@
-% $Id: nextpow2.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: nextpow2.Rd 23 2022-05-30 18:22:23Z proebuck $
 
 \name{nextpow2}
 \alias{nextpow2}
@@ -25,7 +25,7 @@ nextpow2(x)
 }
 \author{
   H. Borchers \email{hwborchers@googlemail.com},
-  P. Roebuck \email{proebuck@mdanderson.org}
+  P. Roebuck \email{proebuck1701@gmail.com}
 }
 \seealso{
   \code{\link{pow2}}

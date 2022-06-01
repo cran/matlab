@@ -1,5 +1,5 @@
 ###
-### $Id: fullfile.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: fullfile.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Build full filename from parts.
 ###
@@ -7,6 +7,6 @@
 
 ##-----------------------------------------------------------------------------
 fullfile <- function(...) {
-    return(file.path(...))
+    file.path(...)
 }
 

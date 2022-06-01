@@ -1,4 +1,4 @@
-% $Id: imagesc.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: imagesc.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{imagesc}
 \alias{imagesc}
@@ -30,6 +30,9 @@ imagesc(x=seq(ncol(C)), y=seq(nrow(C)), C, col=jet.colors(12), \dots)
   with row 1 at the top, i.e., the same as the conventional printed layout
   of a matrix.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \seealso{
   \code{\link[graphics]{image}},
   \code{\link{jet.colors}},
@@ -40,9 +43,6 @@ values <- matrix(c(seq(1,  5, by=1),
                    seq(2, 10, by=2),
                    seq(3, 15, by=3)), nrow=3, byrow=TRUE)
 imagesc(values, xlab="cols", ylab="rows", col=jet.colors(16))
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{hplot}
 

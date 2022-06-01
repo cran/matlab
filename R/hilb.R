@@ -1,5 +1,5 @@
 ###
-### $Id: hilb.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: hilb.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Hilbert matrix.
 ###
@@ -21,6 +21,6 @@ hilb <- function(n) {
     i <- seq_len(n)
     H <- 1 / outer(i-1, i, "+")
 
-    return(H)
+    H
 }
 

@@ -1,5 +1,5 @@
 ###
-### $Id: pascal.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: pascal.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Create Pascal matrix.
 ###
@@ -42,6 +42,6 @@ pascal <- function(n, k = 0) {
         }
     }
 
-    return(P)
+    P
 }
 

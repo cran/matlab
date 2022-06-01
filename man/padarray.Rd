@@ -1,4 +1,4 @@
-% $Id: padarray.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: padarray.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{padarray}
 \alias{padarray}
@@ -43,6 +43,9 @@ padarray(A, padsize, padval=0, direction=c("both", "pre", "post"))
 \value{
   Return value is the same type as argument \code{A} with requested padding.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \examples{
 padarray(1:4, c(0, 2))				# 0 0 [1 2 3 4] 0 0
 padarray(1:4, c(0, 2), -1)			# -1 -1 [1 2 3 4] -1 -1
@@ -50,9 +53,6 @@ padarray(1:4, c(0, 2), -1, "post")		# [1 2 3 4] -1 -1
 padarray(1:4, c(0, 3), "symmetric", "pre")	# 3 2 1 [1 2 3 4]
 padarray(letters[1:5], c(0, 3), "replicate")	# a a a [a b c d e] e e e
 padarray(letters[1:5], c(0, 3), "circular", "post")	# [a b c d e] a b c
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{array}
 

@@ -1,4 +1,4 @@
-% $Id: sum.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: sum.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{sum}
 \alias{sum}
@@ -29,12 +29,12 @@ sum(x, na.rm=FALSE)
   \code{\link[base]{sum}}. If matrix, returns vector containing the sum of
   each column.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \examples{
 sum(1:9)
 sum(matrix(1:9, 3, 3))
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{arith}
 

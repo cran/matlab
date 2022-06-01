@@ -1,4 +1,4 @@
-% $Id: colorbar.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: colorbar.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{colorbar}
 \alias{colorbar}
@@ -22,6 +22,9 @@ colorbar(C, location=c("EastOutside", "WestOutside", "NorthOutside", "SouthOutsi
 
   This implementation differs a bit from its MATLAB counterpart in that
   the values must be passed explicitly.
+}
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
 }
 \seealso{
   \code{\link{imagesc}},
@@ -84,9 +87,6 @@ values <- matrix(c(seq(1,  5, by=1),
 
 dev.new(width=8, height=7)
 doPlot(values, "EastOutside", col=jet.colors(16))
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{hplot}
 

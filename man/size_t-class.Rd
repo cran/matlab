@@ -1,4 +1,4 @@
-% $Id: size_t-class.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: size_t-class.Rd 23 2022-05-30 18:22:23Z proebuck $
 
 \name{size_t-class}
 \alias{size_t-class}
@@ -25,7 +25,7 @@ Class \code{"numeric"}, by class \code{"integer"}.
   Internal class supporting \code{\link{size}}.
 }
 \author{
-  P. Roebuck \email{proebuck@mdanderson.org}
+  P. Roebuck \email{proebuck1701@gmail.com}
 }
 \keyword{classes}
 

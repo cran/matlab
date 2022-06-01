@@ -1,5 +1,5 @@
 ###
-### $Id: size.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: size.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Array dimensions.
 ###
@@ -27,7 +27,7 @@ setMethod("size",
                     dimen = "missing"),
           function(X, dimen) {
               #cat(match.call()[[1]], "(matrix, missing)", "\n")
-              return(as.size_t(dim(X)))
+              as.size_t(dim(X))
           })
 
 setMethod("size",
@@ -35,7 +35,7 @@ setMethod("size",
                     dimen = "missing"),
           function(X, dimen) {
               #cat(match.call()[[1]], "(array, missing)", "\n")
-              return(as.size_t(dim(X)))
+              as.size_t(dim(X))
           })
 
 setMethod("size",
@@ -59,7 +59,7 @@ setMethod("size",
                     dimen = "integer"),
           function(X, dimen) {
               #cat(match.call()[[1]], "(matrix, integer)", "\n")
-              return(getLengthOfDimension(X, dimen))
+              getLengthOfDimension(X, dimen)
           })
 
 setMethod("size",
@@ -76,7 +76,7 @@ setMethod("size",
           function(X, dimen) {
               #cat(match.call()[[1]],
               #    "(", data.class(X), ", ", data.class(dimen), ")", "\n")
-              return(getLengthOfDimension(X, dimen))
+              getLengthOfDimension(X, dimen)
           })
 
 setMethod("size",
@@ -106,6 +106,6 @@ getLengthOfDimension <- function(X, dimen) {
                1	# singleton dimension
            }
 
-    return(as.integer(len))
+    as.integer(len)
 }
 

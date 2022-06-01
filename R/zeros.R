@@ -1,5 +1,5 @@
 ###
-### $Id: zeros.R 55 2014-02-06 16:41:28Z plroebuck $
+### $Id: zeros.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Create a matrix of all zeros.
 ###
@@ -24,6 +24,6 @@ zeros <- function(...) {
         stop("dimensions must be a positive quantity")
     }
 
-    return(array(0, dims))
+    array(0, dims)
 }
 

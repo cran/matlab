@@ -1,5 +1,5 @@
 ###
-### $Id: eye.R 55 2014-02-06 16:41:28Z plroebuck $
+### $Id: eye.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Create an identity matrix.
 ###
@@ -37,6 +37,6 @@ eye <- function(m, n) {
         stop(sprintf("argument %s must be a positive quantity", sQuote("m")))
     }
 
-    return(diag(1, m, n))
+    diag(1, m, n)
 }
 

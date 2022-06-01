@@ -1,4 +1,4 @@
-% $Id: tictoc.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: tictoc.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{tictoc}
 \alias{tic}
@@ -21,13 +21,13 @@ toc(echo=TRUE)
   Provides analog to \code{\link[base]{system.time}}.
   Function \code{toc} can be invoked multiple times in a row.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \examples{
 tic()
 for(i in 1:100) mad(runif(1000))	# kill time
 toc()
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{utilities}
 

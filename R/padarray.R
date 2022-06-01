@@ -1,5 +1,5 @@
 ###
-### $Id: padarray.R 55 2014-02-06 16:41:28Z plroebuck $
+### $Id: padarray.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Pad a vector.
 ###
@@ -120,7 +120,7 @@ padarray0 <- function(a,
          mode(b) <- "logical"
      }
 
-     return(b)
+     b
 }
 
 
@@ -153,7 +153,7 @@ constantPad <- function(a, padsize, padval, direction) {
     ## Make sure output array is same type as the input.
     b <- mkconstarray(mode(a), padval, sizeB)
 
-    return(do.call("[<-", c(list(b), idx, list(a))))
+    do.call("[<-", c(list(b), idx, list(a)))
 }
 
 
@@ -180,7 +180,7 @@ circularPad <- function(a, padsize, direction) {
                       })
     }
 
-    return(do.call("[", c(list(a), idx)))
+    do.call("[", c(list(a), idx))
 }
 
 
@@ -207,7 +207,7 @@ symmetricPad <- function(a, padsize, direction) {
                       })
     }
 
-    return(do.call("[", c(list(a), idx)))
+    do.call("[", c(list(a), idx))
 }
 
 
@@ -238,6 +238,6 @@ replicatePad <- function(a, padsize, direction) {
                       })
     }
 
-    return(do.call("[", c(list(a), idx)))
+    do.call("[", c(list(a), idx))
 }
 

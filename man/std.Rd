@@ -1,4 +1,4 @@
-% $Id: std.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: std.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{std}
 \alias{std}
@@ -22,11 +22,11 @@ std(x, flag=0)
   standard deviation. If matrix, returns vector containing the
   standard deviation of each column.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \examples{
 std(1:2) ^ 2
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{univar}
 

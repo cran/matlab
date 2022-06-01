@@ -1,5 +1,5 @@
 ###
-### $Id: std.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: std.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Standard deviation.
 ###
@@ -11,6 +11,6 @@ std <- function(x, flag = 0) {
         stop("biased standard deviation not implemented")
     }
 
-    return(sd(x))
+    sd(x)
 }
 

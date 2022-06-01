@@ -1,5 +1,5 @@
 ###
-### $Id: find.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: find.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Find indices of nonzero elements.
 ###
@@ -12,6 +12,6 @@ find <- function(x) {
             } else {
                 x != 0
             }
-    return(which(expr))
+    which(expr)
 }
 

@@ -1,5 +1,5 @@
 ###
-### $Id: sum.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: sum.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Sum of elements.
 ###
@@ -31,7 +31,7 @@ setMethod("sum",
                   mode(x) <- "integer"
               }
 
-              return(base::sum(x, na.rm = na.rm))
+              base::sum(x, na.rm = na.rm)
           })
 
 setMethod("sum",
@@ -53,7 +53,7 @@ setMethod("sum",
                   mode(x) <- "integer"
               }
 
-              return(apply(x, 2, base::sum, na.rm = na.rm))
+              apply(x, 2, base::sum, na.rm = na.rm)
           })
 
 setMethod("sum",

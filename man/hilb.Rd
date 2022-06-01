@@ -1,4 +1,4 @@
-% $Id: hilb.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: hilb.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{hilb}
 \alias{hilb}
@@ -20,12 +20,12 @@ hilb(n)
 \value{
   Returns an \code{n}-by-\code{n} matrix constructed as described above.
 }
-\examples{
-hilb(3)
-}
 \author{
   H. Borchers \email{hwborchers@googlemail.com},
-  P. Roebuck \email{proebuck@mdanderson.org}
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
+\examples{
+hilb(3)
 }
 \keyword{array}
 

@@ -1,4 +1,4 @@
-% $Id: repmat.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: repmat.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{repmat}
 \alias{repmat}
@@ -18,6 +18,9 @@ repmat(A, \dots)
   Returns matrix with value \code{A} tiled to the number of dimensions specified.
   Defaults to square if dimension argument resolves to a single value.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \seealso{ 
   \code{\link{ones}},
   \code{\link{zeros}}
@@ -28,9 +31,6 @@ repmat(1, c(3, 3))                 # same thing
 repmat(1, 3, 3)                    # same thing
 repmat(1, size(matrix(NA, 3, 3)))  # same thing
 repmat(matrix(1:4, 2, 2), 3)
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{array}
 

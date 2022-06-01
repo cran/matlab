@@ -1,5 +1,5 @@
 ###
-### $Id: multiline.plot.colors.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: multiline.plot.colors.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Create a vector of colors equivalent to MATLAB's default colors to use
 ### for multiline plots.
@@ -20,9 +20,9 @@ multiline.plot.colors <- function() {
         names(colors)[i.named.colors] <- c("blue", "red", "grey25")
         names(colors)[-i.named.colors] <- ""
 
-        return(colors)
+        colors
     }
 
-    return(get.gca.colororder())
+    get.gca.colororder()
 }
 

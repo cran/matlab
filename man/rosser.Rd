@@ -1,4 +1,4 @@
-% $Id: rosser.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: rosser.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{rosser}
 \alias{rosser}
@@ -22,11 +22,11 @@ rosser()
 \value{
   Returns an \code{8}-by-\code{8} matrix with integer elements.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \examples{
 rosser()
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{array}
 

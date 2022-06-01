@@ -1,4 +1,4 @@
-% $Id: rot90.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: rot90.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{rot90}
 \alias{rot90}
@@ -20,15 +20,15 @@ rot90(A, k=1)
   Returns matrix corresponding to argument \code{A} having been rotated
   argument \code{k} number of times.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \seealso{ 
   \code{\link{fliplr}},
   \code{\link{flipud}}
 }   
 \examples{
 rot90(matrix(1:4, 2, 2))
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{array}
 

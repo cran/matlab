@@ -1,5 +1,5 @@
 ###
-### $Id: jet.colors.R 48 2014-02-05 20:50:54Z plroebuck $
+### $Id: jet.colors.R 29 2022-05-30 23:02:22Z proebuck $
 ###
 ### Create a vector of colors beginning with dark blue, ranging through
 ### shades of blue, cyan, green, yellow and red, and ending with dark red.
@@ -32,7 +32,7 @@ jet <- function(m = DEFAULT.COLORMAP.SIZE) {
     J[g, 2] <- u[seq(along = g)]
     J[b, 3] <- u[seq(length(u)-length(b)+1, length(u))]
 
-    return(J)
+    J
 }
 
 

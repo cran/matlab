@@ -1,4 +1,4 @@
-% $Id: find.Rd 50 2014-02-05 21:15:00Z plroebuck $
+% $Id: find.Rd 25 2022-05-30 18:46:01Z proebuck $
 
 \name{find}
 \alias{find}
@@ -19,12 +19,12 @@ find(x)
 \value{
   Returns indices of corresponding elements matching the expression \code{x}.
 }
+\author{
+  P. Roebuck \email{proebuck1701@gmail.com}
+}
 \examples{
 find(-3:3 >= 0)
 find(c(0, 1, 0, 2, 3))
-}
-\author{
-  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{logic}
 \keyword{attribute}
