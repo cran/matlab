@@ -3,7 +3,7 @@
 \name{size_t-class}
 \alias{size_t-class}
 \docType{class}
-\title{Class "size\_t"}
+\title{Class "size_t"}
 \description{
   This class represents the dimensions of another \R object
 }

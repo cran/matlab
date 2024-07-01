@@ -1,4 +1,4 @@
-289c11d17c1d9f1b034eded8e79954cd *DESCRIPTION
+8cabbde38d51ca485e29a04efae3ae88 *DESCRIPTION
 e4a17a2ac301ccf65155d6662e0f9064 *NAMESPACE
 16e34721f71cda024c1a798b30b242de *NEWS
 2fd8d25e3404a83452ca49d64db0a413 *R/ceil.R
@@ -48,7 +48,7 @@ bec2053409d6ac22424a2dd49e6b5b9e *R/tictoc.R
 9766839904a01bc17a737a6b4d7f7f7e *R/vander.R
 14de91d2fd536a951dd365e36f6ca141 *R/zeros.R
 eab2eb656d2eac69dadcda8519b6b1c4 *R/zzz.R
-b225f9b63942ce1096f93b8c48a8dd6a *build/matlab.pdf
+5886c2dd7900e0b5230b7896911422f9 *build/stage23.rdb
 269462414077dfa7b40265b251e48743 *inst/COPYRIGHTS
 fa654ee774f160767ab9735a4f2bab9a *man/ceil.Rd
 e58b53b5fbc6dce24d93e3fab2ec676b *man/cell.Rd
@@ -87,7 +87,7 @@ d97c305f213eae2f96c434d78a2b0752 *man/repmat.Rd
 b2a01f69208c949e07220876ae71ec8d *man/rosser.Rd
 4f7bc0a37e526a77efd3a9db009c73a0 *man/rot90.Rd
 8df7380dd54c6c2eefb60b4483c805a0 *man/size.Rd
-8aa60ba5e2a663d7b2921aa85b6df362 *man/size_t-class.Rd
+34f218a9de27dc70c64ddc479d08a9eb *man/size_t-class.Rd
 802707eb45be7d52b68474fbf97800e0 *man/std.Rd
 23c618192c09c274145918f7ab5203d9 *man/strcmp.Rd
 7650a60b0cd224b3c3126abe0d1a5d32 *man/sum.Rd
